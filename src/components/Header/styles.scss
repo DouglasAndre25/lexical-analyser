@@ -1,0 +1,9 @@
+.header {
+    display: flex;
+    align-items: center;
+
+    .headerTitle {
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+}
