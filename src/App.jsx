@@ -1,5 +1,6 @@
-import { BrowserRouter, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
+import HomePage from "./pages/Home";
 
 import "./App.scss";
 
@@ -8,7 +9,9 @@ const App = () => {
     <BrowserRouter>
       <Header />
       <main>
-        <Routes></Routes>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
       </main>
     </BrowserRouter>
   );
